@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Various maps</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div class="fieldgroup">
+            <input type="text" name="search" placeholder="Enter address..">
+            <input type="radio" id="pin_location" name="selection" checked="checked">
+            <label for="pin_location">Pin location</label>
+            <input type="radio" id="parks" name="selection">
+            <label for="parks">Parks</label>
+            <input type="radio" id="schools" name="selection">
+            <label for="schools">Schools</label>
+            <input type="button" id="search_button" value="Search">
+        </div>
+        <div class="parent_box">
+            <div class="box">
+                <h1 id="address_header">Enter address...</h1>
+                <div class="mapouter"><div class="gmap_canvas"><iframe id="googlemaps" width="952" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=sherbrooke,canada&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><style>.mapouter{position:relative;text-align:right;height:400px;width:952px;}</style><style>.gmap_canvas {overflow:hidden;background:none!important;height:400px;width:952px;}</style></div></div>
+            </div>
+            <div class="box">
+                <h1>Sherbrooke cycling paths</h1>
+                <iframe src="https://cartes.ville.sherbrooke.qc.ca/carteGlobale/?theme=sports&cat=reseaucyclable"></iframe>
+            </div>
+            <div class="box">
+                <h1>Sherbrooke SPAIP</h1>
+                <iframe src="https://cartes.ville.sherbrooke.qc.ca/carteGlobale/?theme=urbanisme&cat=piia"></iframe>
+            </div>
+            <div class="box">
+                <h1>Sherbrooke bus routes</h1>
+                <iframe src="https://cartes.ville.sherbrooke.qc.ca/carteGlobale/?theme=transport&cat=circuitsts"></iframe>
+            </div>
+        </div>
+    </body>
+</html>
